@@ -1,6 +1,7 @@
 //hint str(_this);
 
 if ("ACE_Banana" in (items (_this select 0))) then {
+	playSound3D ["A3\Sounds_F\sfx\alarm_independent.wss", (_this select 0)];
 	_string = floor (random 9);
 	switch ( _string ) do {
 		case 0: { hint "Ring Ring Ring!" };
